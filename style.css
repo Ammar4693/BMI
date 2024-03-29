@@ -1,0 +1,298 @@
+html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #0f132f;
+  }
+  
+  .wrapper {
+    height: 100vh;
+    position: relative;
+  }
+  
+  .first-wrap {
+    height: 100vh;
+  }
+  
+  .welc {
+    color: #efefef;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .welc > h1 {
+    font-size: 35px;
+    letter-spacing: 5px;
+  }
+  
+  .welc > img {
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .details {
+    display: flex;
+    flex-direction: column;
+    color: #efefef;
+    border: 2px solid #efefef;
+    width: 350px;
+    margin: auto;
+    margin-top: 120px;
+    padding: 10px;
+  }
+  
+  .box {
+    display: flex;
+    padding: 15px;
+  }
+  
+  #nme {
+    margin-left: 10px;
+  }
+  
+  #ag {
+    margin-left: 20px;
+  }
+  
+  #name,
+  #age,
+  select {
+    margin-left: 10px;
+  }
+  
+  .box > input {
+    background-color: #0f132f;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #efefef;
+    font-size: 15px;
+    color: #efefef;
+  }
+  
+  #nxt {
+    color: black;
+    text-align: right;
+    margin-left: 75%;
+    margin-top: 45px;
+    padding: 10px;
+  }
+  
+  #checkbox {
+    display: none;
+  }
+  
+  .top label {
+    font-size: 30px;
+  }
+  
+  .top {
+    color: #efefef;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  
+  .top h1 {
+    font-size: 25px;
+  }
+  
+  .about {
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000080;
+    background-color: #efefef;
+    border-radius: 10px;
+    text-align: justify;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    display: none;
+  }
+  
+  #checkbox:checked ~ .about {
+    z-index: 10;
+    display: block;
+  }
+  .height {
+    color: #efefef;
+    width: 330px;
+    margin: auto;
+    margin-top: 60px;
+    text-align: center;
+    padding: 20px;
+    background-color: #2E2F3C;
+    border-radius: 5px;
+  }
+  
+  .height > input {
+    background-color: #2E2F3C;
+    outline: none;
+    border: none;
+    width: 290px;
+    border-bottom: 1px solid #efefef;
+    margin: auto;
+    margin-top: 30px;
+    color: #efefef;
+    font-size: 1.5em;
+  }
+  
+  .height > label {
+    font-size: 20px;
+  }
+  
+  .weight {
+    width: 40%;
+    margin: auto;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    text-align: center;
+    color: white;
+    background-color: #2E2F3C;
+    position: relative;
+    z-index: 5;
+  }
+  
+  #weight {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .inde {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+  }
+  
+  #dec,
+  #inc {
+    font-size: 1em;
+    padding: 1em;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .content {
+    text-align: center;
+    margin-top: 150px;
+  }
+  
+  #start {
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 20px;
+  }
+  
+  .Output {
+    height: 100vh;
+  }
+  
+  .ans .reslt {
+    padding: 25px 25px 10px;
+    font-size: 24px;
+    color: #efefef;
+  }
+  
+  #nameDisplay {
+    color: #efefef;
+    padding: 15px;
+    font-size: 25px;
+  }
+  
+  .innerbx {
+    height: 80%;
+    background-color: #0f132f;
+    border-radius: 20px;
+  }
+  
+  .resultt {
+    height: 30%;
+    position: relative;
+  }
+  
+  .innerbx p {
+    text-align: center;
+    font-size: 22px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  
+  .idea {
+    padding: 10px;
+  }
+  
+  .ideabox {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 18px;
+    background-color: white;
+  }
+  
+  .innerbx button {
+    padding: 0.5em 1em;
+    background-color: #35D2E9;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 27%;
+    margin-top: 20px;
+  }
+  
+  .circle {
+    padding-top: 8px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+  }
+  
+  .finalResult {
+    font-size: 34px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+    height: 100%;
+    margin-top: 17%;
+  }
+  .first-wrap{
+    position: relative;
+  }
+  
+  .wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: none;
+  }
+  
+  .Output{
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: none;
+  }
+  

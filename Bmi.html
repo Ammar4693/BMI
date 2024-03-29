@@ -1,0 +1,105 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+  <title>BMI CALCULATOR</title>
+</head>
+<body>
+<header>
+  <section class="first-wrap" id="wrap-first">
+    <div class="welc">
+      <h1>BMI<br> CALCULATOR</h1>
+      <p>Your First Step Towards a Healthier You!</p>
+      <img src="./Component21.svg"/>
+    </div>
+    <div class="details">
+      <div class="box A">
+        <label for="det" id="nme">Name :</label>
+        <input type="text" name="urname" id="name">
+      </div>
+      <div class="box B">
+        <label for="dett" id="ag">Age   :</label>
+        <input type="number" name="age" id="age">
+      </div>
+      <div class="box C">
+        <label for="dettt">Gender :</label>
+        <select>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </div>
+    </div>
+    <input type="button" value="Next>>" id="nxt" onclick="firstClick()" />
+  </section>
+  <section class="wrapper" id="wrap">
+    <div class="top">
+      <label for="checkbox" class="fa-solid fa-question"></label>
+      <input type="checkbox" id="checkbox">
+      <h1>BMI CALCULATOR</h1>
+      <div class="about">
+        <h1>BMI Calculator</h1><br>
+        <p>BMI is used to diagnose the Body Fitness or Health of an Individual. <br><br>
+          <b>BMI 0-11:</b> Severely Underweight, Consult Dietician. <br>
+          <b>BMI 11-18.5:</b> Underweight, Care Needed. <br>
+          <b>BMI 18.5-25:</b> Healthy Body. <br>
+          <b>BMI 25-30:</b> Overweight, Care Needed. <br>
+          <b>BMI 30+:</b> Severely Overweight, Consult Dietician. <br>
+        </p>
+      </div>
+    </div>
+    <div class="name" id="nameDisplay"></div>
+    <div class="height">
+      <label for="first">HEIGHT(cm):</label><br>
+      <input type="number" id="height" name="height"><br>
+    </div>
+    <p></p>
+    <div class="weight">
+      <p>WEIGHT(kg)</p>
+      <div id="weight">50</div>
+      <div class="inde">
+        <input type="button" value="-" id="dec" onclick="decrement()">
+        <input type="button" value="+" id="inc" onclick="increment()">
+      </div>
+    </div>
+    <div class="content">
+      <input type="button" value="CALCULATE" id="start" onclick="BMICalculator(),secondClick()" >
+    </div>
+  </section>
+  <section class="Output" id="output">
+    <div class="ans">
+      <div class="reslt">Your BMI Result is </div>
+    </div>
+    <div class="innerbx">
+      <div class="resultt">
+        <div class="circle" id="circle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="184" height="184" viewBox="0 0 234 234" fill="none">
+            <path id="color" d="M234 117C234 181.617 181.617 234 117 234C52.3827 234 0 181.617 0 117C0 52.3827 52.3827 0 117 0C181.617 0 234 52.3827 234 117ZM21.3839 117C21.3839 169.807 64.1927 212.616 117 212.616C169.807 212.616 212.616 169.807 212.616 117C212.616 64.1927 169.807 21.3839 117 21.3839C64.1927 21.3839 21.3839 64.1927 21.3839 117Z" fill="#80E034"/>
+          </svg> 
+        </div> 
+        <div class="finalResult" id="finalResult">0</div>
+      </div>
+      <p id="wordOutput">You have normal body weight</p>
+      <div class="idea">
+        <div class="ideabox" id="vsunweight"><span>Very severely underweight</span><span>&lt;16</span></div>
+        <div class="ideabox" id="sunweight"><span>Severely underweight</span><span>16-16.9</span></div>
+        <div class="ideabox" id="unweight"><span>Underweight</span><span>17-18.4</span></div>
+        <div class="ideabox" id="normal"><span>Normal</span><span>18.5-24.9</span></div>
+        <div class="ideabox" id="oweight"><span>Over Weight</span><span>25-29.9</span></div>
+        <div class="ideabox" id="ocone"><span>Obese Class-1</span><span>30-34.9</span></div>
+        <div class="ideabox" id="octwo"><span>Obese Class-2</span><span>35-39.9</span></div>
+        <div class="ideabox" id="octhree"><span>Obese Class-3</span><span>39.9+</span></div>
+      </div>
+      <button onclick="thirdClick()">Re-Calculate BMI</button>
+    </div>
+  </section>
+</header>
+<script src="script.js"></script>
+</body>
+</html>
